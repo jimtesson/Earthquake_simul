@@ -1,0 +1,35 @@
+0      iecho
+80000000  tfin (years)
+1       dtime
+0       tmin
+400000  tmax
+10000      nquakemax
+1       initialisation des contrainte par lecture (zero sinon)
+1.e10   intervalle des resultats pour l'intersismique (yrs)
+0       nombre d'ecriture des resultats pour le cosismique (s)
+1.e11   module d'young (Pa)
+3.0e8   contrainte normale dans la zone de nucleation (Pa)
+0       "stress overshoot" permis (1)
+0       irelax
+0.0     bruits
+0.0    bruitd
+2       nombre de failles
+0.0397e-4 1000   9.8  1.e7  0.3 0.21319  0.9461e20 de, ds, masse, mus, mud, visco (faille 1)
+0.0397e-4 1000   9.8  1.e7  0.3 0.21319  0.9461e20 de, ds, masse, mus, mud, visco (faille 2)
+0.0 -0.9951e5 coefficients d'interaction co-sismique 
+-1.2694e5 0.0 coefficients d'interaction co-sismique 
+0.0 -0.9951e5 coefficients d'interaction état relaxé 
+-1.2694e5 0.0 coefficients d'interaction état relaxé 
+882e5	890e5  contraintes externes      (Pa)
+0.0	0.0   contraintes (short range) (Pa)
+END    fin du fichier
+
+
+COSEISMIC MATRIX 
+0.0 -0.9951e5 coefficients d'interaction postsismique (sur le seisme 1)
+-1.2694e5 0.0 coefficients d'interaction postsismique (sur le seisme 2)
+
+
+RELAXED MATRIX 
+0.0 -1.2647e5 coefficients d'interaction postsismique (sur le seisme 1)
+-1.3290e5 0.0 coefficients d'interaction postsismique (sur le seisme 2)

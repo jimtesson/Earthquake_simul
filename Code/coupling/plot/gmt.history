@@ -1,0 +1,10 @@
+# GMT 5 Session common arguments shelf
+BEGIN GMT 5.1.0
+B	a0.5f0.1:Slip (m):
+J	X
+JX	X7
+R	0/300/0/300
+X	-1
+Y	-8
+L	10
+END

@@ -1,0 +1,36 @@
+1               iecho
+***	MAP OKADA output ************************************
+0               imap (1/0)
+3  0             ivar ivarlog
+0    0   0    xmap0 ymap0 zmap0
+300 300 1    nmapa nmapb nmapc
+300 300 -20   dmapa dmapb dmapc
+0.0  0.0       orimap dipmap
+***	CROSS-SECTION of vertical displacements *************
+0               	icross (1/0)
+200 0.0 200	400 400    xmin ymin xmax ymax npoints
+0.0 50 400    zmin zmax npoints
+***	MAP CFS *********************************************
+1 10.0			plot map(1/0), depth(km)
+0				CFS map considering the fault at surface(1/0 yes or not)
+*** Other variables *************************************
+10000            cutoff
+8.e10           young
+0.25            poisson
+0.3				Friction
+1               ipress
+2               nbe de failles (km)
+***	FAULT PARAMETERS *************************************
+NEW           *** FAULT 1 ********************************
+100.0 100.0     Position of the fault-center at surface (x, y)
+50.            Length (km)
+0. 1500.          Min/Max depth (km) (-c okada parameter)
+270.0 45.0 -90.0   Fault-plane (Az/Dip/rake)
+0.0 -1.0 0.0    dislocation (strike-dip-tensile) (m)
+NEW           *** FAULT 2 ********************************
+100.0 150.0     Position of the fault-center at surface (x, y)
+50.            Length (km)
+0. 1500.          Min/Max depth (km) (-c okada parameter)
+270.0 45.0 -90.0   Fault-plane (Az/Dip/rake)
+0.0 -1.0 0.0    dislocation (strike-dip-tensile)
+END
